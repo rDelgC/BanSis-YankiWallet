@@ -4,6 +4,7 @@ import com.boot.bansis.yanki.wallet.entities.YankiWallet;
 import com.boot.bansis.yanki.wallet.repositories.YankiWalletRepository;
 import com.boot.bansis.yanki.wallet.services.YankiWalletService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -11,6 +12,7 @@ import reactor.core.publisher.Mono;
  *
  * @author rDelgC
  */
+@Service
 public class YankiWalletServiceImpl implements YankiWalletService {
 
     @Autowired
