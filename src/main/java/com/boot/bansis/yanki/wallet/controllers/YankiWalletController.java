@@ -31,7 +31,7 @@ public class YankiWalletController {
     }
 
     @GetMapping("/{id}")
-    public Mono<YankiWallet> get(@PathVariable String id) {
+    public Mono<YankiWallet> findById(@PathVariable String id) {
         return yankiWalletService.findById(id);
     }
 

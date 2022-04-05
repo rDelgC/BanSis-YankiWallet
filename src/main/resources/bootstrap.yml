@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: bansis-yanki-wallet
+    data:
+      mongodb:
+        uri: mongodb://localhost:27017/bandb-yanki-wallet
+    cloud:
+        config:
+            uri: http://localhost:8081
+            username: nttdatosr
+            password: nttdatosd
+

@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -22,7 +21,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document("wallet_holder")
 public class Holder {
 
-    @Id
+    @Field("id")
     private String id;
 
     @Field("firstName")
